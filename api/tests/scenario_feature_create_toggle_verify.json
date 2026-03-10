@@ -1,0 +1,80 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"test_feature_toggle_1234\", \"description\": \"Integration test feature for toggle workflow\", \"project_id\": 1, \"default_enabled\": false}",
+    "ResponseBody": "{\"id\": 1, \"name\": \"test_feature_toggle_1234\", \"description\": \"Integration test feature for toggle workflow\", \"project_id\": 1, \"default_enabled\": false, \"message\": \"Feature 'test_feature_toggle_1234' created successfully\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/create/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T10:58:26.019Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"feature_id\": 1, \"environment_id\": 1, \"enabled\": true}",
+    "ResponseBody": "{\"feature_id\": 1, \"feature_name\": \"test_feature_toggle_1234\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": true, \"message\": \"Feature 'test_feature_toggle_1234' enabled in Development\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/toggle/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T10:58:32.387Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"feature_id\": 1, \"feature_name\": \"test_feature_toggle_1234\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": true, \"description\": \"Integration test feature for toggle workflow\", \"value\": null, \"value_type\": null}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/features/simple/status/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T10:58:37.958Z",
+    "Scheme": "http"
+  }
+]
