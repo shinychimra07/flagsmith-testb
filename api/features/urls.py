@@ -10,6 +10,12 @@ from features.import_export.views import (
     download_flagsmith_on_flagsmith,
     feature_import,
 )
+from features.simple_views import (
+    create_simple_feature,
+    get_feature_status,
+    list_simple_features,
+    toggle_feature_state,
+)
 from features.views import (
     SimpleFeatureStateViewSet,
     get_feature_by_uuid,
@@ -24,6 +30,10 @@ app_name = "features"
 
 urlpatterns = [
     path("", include(router.urls)),
+    path("simple/create/", create_simple_feature, name="create-simple-feature"),
+    path("simple/toggle/", toggle_feature_state, name="toggle-feature-state"),
+    path("simple/status/", get_feature_status, name="get-feature-status"),
+    path("simple/list/", list_simple_features, name="list-simple-features"),
     path("get-by-uuid/<uuid:uuid>/", get_feature_by_uuid, name="get-feature-by-uuid"),
     path("create-feature-export/", create_feature_export, name="create-feature-export"),
     path(
