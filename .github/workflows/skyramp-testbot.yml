@@ -27,7 +27,7 @@ jobs:
           anthropic_api_key: ${{ secrets.SKYRAMP_TESTBOT_API_KEY }}
 
           target_setup_command: './deployment-testbot/setup.sh'
-          target_ready_check_command: 'curl -f http://localhost:8000/health'
+          target_ready_check_command: 'curl -f http://localhost:8080/health'
           target_ready_check_timeout: 60
           auth_token_command: './deployment-testbot/get-token.sh'
 
