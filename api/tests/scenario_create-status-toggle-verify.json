@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"toggle_verify_test_001\", \"description\": \"Feature to verify status before and after toggle\", \"project_id\": 1, \"default_enabled\": false}",
+    "ResponseBody": "{\"id\": 4, \"name\": \"toggle_verify_test_001\", \"description\": \"Feature to verify status before and after toggle\", \"project_id\": 1, \"default_enabled\": false, \"message\": \"Feature 'toggle_verify_test_001' created successfully\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/create/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T02:00:34.454Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"feature_id\": 4, \"feature_name\": \"toggle_verify_test_001\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": false, \"description\": \"Feature to verify status before and after toggle\", \"value\": null, \"value_type\": \"string\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/features/simple/status/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T02:00:52.565Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"feature_id\": 4, \"environment_id\": 1, \"enabled\": true}",
+    "ResponseBody": "{\"feature_id\": 4, \"feature_name\": \"toggle_verify_test_001\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": true, \"message\": \"Feature 'toggle_verify_test_001' enabled in Development\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/toggle/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T02:01:06.799Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"feature_id\": 4, \"feature_name\": \"toggle_verify_test_001\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": true, \"description\": \"Feature to verify status before and after toggle\", \"value\": null, \"value_type\": \"string\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/features/simple/status/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T02:01:13.623Z",
+    "Scheme": "http"
+  }
+]

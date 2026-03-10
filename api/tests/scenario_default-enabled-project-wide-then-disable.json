@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"skyramp_proj_wide_20260310\", \"description\": \"Project-wide status test with default_enabled=true\", \"project_id\": 1, \"default_enabled\": true}",
+    "ResponseBody": "{\"id\": 504, \"name\": \"skyramp_proj_wide_20260310\", \"description\": \"Project-wide status test with default_enabled=true\", \"project_id\": 1, \"default_enabled\": true, \"message\": \"Feature 'skyramp_proj_wide_20260310' created successfully\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/create/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T01:51:56.359Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"results\": [{\"feature_id\": 504, \"feature_name\": \"skyramp_proj_wide_20260310\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": true, \"description\": \"Project-wide status test with default_enabled=true\", \"value\": null, \"value_type\": null}], \"count\": 1}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/features/simple/status/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T01:52:16.908Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"feature_id\": 504, \"environment_id\": 1, \"enabled\": false}",
+    "ResponseBody": "{\"feature_id\": 504, \"feature_name\": \"skyramp_proj_wide_20260310\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": false, \"message\": \"Feature 'skyramp_proj_wide_20260310' disabled in Development\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/toggle/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T01:52:29.624Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"results\": [{\"feature_id\": 504, \"feature_name\": \"skyramp_proj_wide_20260310\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": false, \"description\": \"Project-wide status test with default_enabled=true\", \"value\": null, \"value_type\": null}], \"count\": 1}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/features/simple/status/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T01:52:35.331Z",
+    "Scheme": "http"
+  }
+]
