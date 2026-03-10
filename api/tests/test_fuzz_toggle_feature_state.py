@@ -14,7 +14,7 @@ import skyramp
 import os
 import time
 # URL for test requests
-URL = "http://localhost:8080"
+URL = "http://localhost:8000"
 
 # fuzz test for /api/v1/features/simple/toggle/ POST
 def test_endpoint_post():

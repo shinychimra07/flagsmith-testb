@@ -14,7 +14,7 @@ import skyramp
 import os
 import time
 # URL for test requests
-URL_localhost = "http://localhost:8080"
+URL_localhost = "http://localhost:8000"
 
 def test_integration():
     # Invocation of Skyramp Client
