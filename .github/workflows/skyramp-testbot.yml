@@ -24,7 +24,7 @@ jobs:
         uses: skyramp/testbot@shiny/test-recom-update
         with:
           skyramp_license_file: ${{ secrets.SKYRAMP_LICENSE }}
-          anthropic_api_key: ${{ secrets.SKYRAMP_TEST_BOT_API_KEY }}
+          anthropic_api_key: ${{ secrets.SKYRAMP_TESTBOT_API_KEY }}
 
           target_setup_command: './deployment-testbot/setup.sh'
           target_ready_check_command: 'curl -f http://localhost:8000/health'
