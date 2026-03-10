@@ -1,0 +1,54 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"default_enabled_list_check\", \"description\": \"Feature with default enabled true\", \"project_id\": 1, \"default_enabled\": true}",
+    "ResponseBody": "{\"id\": 20, \"name\": \"default_enabled_list_check\", \"description\": \"Feature with default enabled true\", \"project_id\": 1, \"default_enabled\": true, \"message\": \"Feature 'default_enabled_list_check' created successfully\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/create/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T10:43:00.975Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"results\": [{\"id\": 20, \"name\": \"default_enabled_list_check\", \"description\": \"Feature with default enabled true\", \"default_enabled\": true, \"is_archived\": false, \"created_date\": \"2026-03-10T10:00:00Z\"}], \"count\": 1}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/features/simple/list/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T10:43:19.121Z",
+    "Scheme": "http"
+  }
+]

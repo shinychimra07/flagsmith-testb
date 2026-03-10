@@ -1,0 +1,54 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"toggle_response_verify_feature\", \"description\": \"Testing toggle response fields\", \"project_id\": 1, \"default_enabled\": false}",
+    "ResponseBody": "{\"id\": 40, \"name\": \"toggle_response_verify_feature\", \"description\": \"Testing toggle response fields\", \"project_id\": 1, \"default_enabled\": false, \"message\": \"Feature 'toggle_response_verify_feature' created successfully\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/create/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T10:43:00.982Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"feature_id\": 40, \"environment_id\": 1, \"enabled\": true}",
+    "ResponseBody": "{\"feature_id\": 40, \"feature_name\": \"toggle_response_verify_feature\", \"environment_id\": 1, \"environment_name\": \"Development\", \"enabled\": true, \"message\": \"Feature 'toggle_response_verify_feature' enabled in Development\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/features/simple/toggle/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8080,
+    "Timestamp": "2026-03-10T10:43:19.128Z",
+    "Scheme": "http"
+  }
+]
