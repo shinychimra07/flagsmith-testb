@@ -588,6 +588,18 @@ class FeatureViewSet(viewsets.ModelViewSet):  # type: ignore[type-arg]
 
         return queryset
 
+    @action(detail=False, methods=["GET"], url_path="summary")
+    def summary(self, request, project_pk):
+        """Return a count summary of features in the project."""
+        queryset = self.get_queryset()
+        total = queryset.count()
+        archived = queryset.filter(is_archived=True).count()
+        return Response({
+            "total": total,
+            "active": total - archived,
+            "archived": archived,
+        })
+
 
 @method_decorator(
     name="list",
