@@ -32,7 +32,7 @@ jobs:
           auth_token_command: './deployment-testbot/get-token.sh'
           skyramp_mcp_source: github
           skyramp_mcp_github_token: ${{ secrets.PAT_TOKEN }}
-          skyramp_mcp_github_ref: mrugesh/merge-tools #my test branch
+          skyramp_mcp_github_ref: shiny/SKYR-3638
 
           test_directory: 'api/tests'
           auto_commit: true
