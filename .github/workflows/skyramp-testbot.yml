@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run Skyramp Testbot
-        uses: skyramp/testbot@v0.2.0
+        uses: skyramp/testbot@SKYR-3625
         with:
           skyramp_license_file: ${{ secrets.SKYRAMP_LICENSE }}
           anthropic_api_key: ${{ secrets.SKYRAMP_TESTBOT_API_KEY }}
@@ -30,6 +30,9 @@ jobs:
           health_check_command: 'curl -f http://localhost:8080/health'
           health_check_timeout: 90
           auth_token_command: './deployment-testbot/get-token.sh'
+          skyramp_mcp_source: github
+          skyramp_mcp_github_token: ${{ secrets.PAT_TOKEN }}
+          skyramp_mcp_github_ref: mrugesh/merge-tools #my test branch
 
           test_directory: 'api/tests'
           auto_commit: true
